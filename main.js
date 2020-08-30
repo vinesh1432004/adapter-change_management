@@ -83,17 +83,17 @@ class ServiceNowAdapter extends EventEmitter {
     this.healthcheck();
   }
 
-  /**
-   * @memberof ServiceNowAdapter
-   * @method healthcheck
-   * @summary Check ServiceNow Health
-   * @description Verifies external system is available and healthy.
-   *   Calls method emitOnline if external system is available.
-   *
-   * @param {ServiceNowAdapter~requestCallback} [callback] - The optional callback
-   *   that handles the response.
-   */
-  healthcheck(callback) {
+/**
+ * @memberof ServiceNowAdapter
+ * @method healthcheck
+ * @summary Check ServiceNow Health
+ * @description Verifies external system is available and healthy.
+ *   Calls method emitOnline if external system is available.
+ *
+ * @param {ServiceNowAdapter~requestCallback} [callback] - The optional callback
+ *   that handles the response.
+ */
+healthcheck(callback) {
  this.getRecord((result, error) => {
    /**
     * For this lab, complete the if else conditional
@@ -186,7 +186,7 @@ class ServiceNowAdapter extends EventEmitter {
      * Note how the object was instantiated in the constructor().
      * get() takes a callback function.
      */
-     console.log(`\nResponse returned from GET request:\n${JSON.stringify(callback)}`)
+      console.log(`\nResponse returned from GET request:\n${JSON.stringify(callback)}`)
   }
 
   /**
@@ -205,7 +205,7 @@ class ServiceNowAdapter extends EventEmitter {
      * Note how the object was instantiated in the constructor().
      * post() takes a callback function.
      */
-     console.log(`\nResponse returned from GET request:\n${JSON.stringify(callback)}`)
+      console.log(`\nResponse returned from GET request:\n${JSON.stringify(callback)}`)
   }
 }
 
