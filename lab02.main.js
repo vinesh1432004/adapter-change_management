@@ -96,8 +96,10 @@ function get(serviceNowTable, callback) {
 
 }
 
+
+
 /**
- * @function get
+ * @function post
  * @description Call the ServiceNow POST API.
  *
  * @param {string} serviceNowTable - The table target of the ServiceNow table API.
@@ -117,7 +119,7 @@ function post(serviceNowTable, callback) {
   // that holds the HTTP request method, credentials, and the API's URL.
   // Some properties are hardcoded, like the method and part of the URI.
   // Some properties are read from global const options.
-  // Some properties are passed into function post() through parameters.
+  // Some properties are passed into function get() through parameters.
   const requestOptions = {
     method: 'POST',
     auth: {
@@ -154,7 +156,8 @@ function post(serviceNowTable, callback) {
   });
 
 }
-// This test function calls your request and logs any errors.
+
+
 /*
  * This section is used to test your project.
  * We will test both get() and post() functions.
